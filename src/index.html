@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O+M=</title>
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Edu+TAS+Beginner:wght@400..700&family=Great+Vibes&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+  <script src="main.js" defer></script>
+  
+</head>
+
+<body>
+
+  <div class="language-trigger">
+    <div class="arrow_up">
+      <img class="arrow_up_img" src="/img/flowers/up-arrow.png">
+    </div>
+  </div>
+
+  <div class="language-options">
+
+    <div class="PL">
+      <a href="/src/index_PL.html" class="text-decoration-none">
+        <img class="poland_img" src="/img/flowers/poland.png">
+      </a>
+    </div>
+  
+    <div class="CZ">
+      <a href="/src/index.html"  class="text-decoration-none">
+        <img class="czech_img" src="/img/flowers/czech-republic.png">
+      </a>
+    </div>
+  
+  </div>
+
+  <!-- NAVBAR -->
+<div class="custome-navbar container-fluid d-flex fixed-top">
+
+  <!-- <div class="container container-nav-custome d-none d-md-flex flex-row align-items-center justify-content-end gap-4">
+
+    <div class="flex-column"><a href="" class="nav-bar-link text-decoration-none text-uppercase font-700">home</a></div>
+    <div class="flex-column"><a href="" class="nav-bar-link text-decoration-none text-uppercase font-700">info</a></div>
+    <div class="flex-column"><a href="" class="nav-bar-link text-decoration-none text-uppercase font-700">obřad</a></div>
+    <div class="flex-column"><a href="" class="nav-bar-link text-decoration-none text-uppercase font-700">místo</a></div>
+    <div class="flex-column"><a href="" class="nav-bar-link text-decoration-none text-uppercase font-700">formulář</a></div>
+
+  </div> -->
+
+  <label class="hamburger-menu z-1 d-flex">
+    <input type="checkbox">
+  </label>
+
+
+  <!-- SIDEBAR  -->
+  <div class="container z-0 lace-bordered-div-sidebar sidebar d-flex flex-column align-items-center flex-lg-row gap-lg-5 p-lg-0 justify-content-center">
+      <div class="derocativ-underline text-uppercase text-center py-4 font-700" >
+        <a href="" class="text-decoration-none font-700">Mary & Ondra</a>  
+      </div>
+      <div class="derocativ-underline text-uppercase text-center py-4 font-700" >
+        <a href="" class="text-decoration-none font-700">program</a>
+      </div>
+      <div class="derocativ-underline text-uppercase text-center py-4 font-700" >
+        <a href="" class="text-decoration-none font-700">důležté osoby
+        </a>
+      </div>
+      <div class="derocativ-underline text-uppercase text-center py-4 font-700" >
+        <a href="" class="text-decoration-none font-700">Formulář</a>
+      </div>
+      <div class="derocativ-underline text-uppercase text-center py-4 font-700" >
+        <a href="" class="text-decoration-none font-700">místo konání
+        </a>
+      </div>
+  </div>
+
+</div>
+
+<div class="container fixed-top d-flex w-auto justify-content-start align-items-center z-1 px-0 mx-0">
+  <img class="logo" src="/img/mol.png">
+</div>
+
+
+
+  <!-- CONTENT -->
+  <div class="content-main container px-5 px-sm-0 mx-sm-0 lace-bordered-div ">
+        <!-- SLIDER -->
+        <span class="d-flex justify-content-center align-items-center text-uppercase fs-4 font-400">
+          <div><img class="logo-small" src="/img/mol.png" alt=""></div> 
+          Mary & Ondra
+          <div><img class="logo-small mirrored-image" src="/img/mol.png" alt=""></div> 
+        </span>
+
+        <div class="slider">
+          <div class="list">
+              <div class="item">
+                  <img src="/img/slider/1.jpeg" alt="">
+              </div>
+              <div class="item">
+                  <img src="/img/slider/2.jpeg" alt="">
+              </div>
+              <div class="item">
+                  <img src="/img/slider/3.jpeg" alt="">
+              </div>
+              <div class="item">
+                  <img src="/img/slider/4.jpeg" alt="">
+              </div>
+              <div class="item">
+                  <img src="/img/slider/5.jpeg" alt="">
+              </div>
+              <div class="item">
+                <img src="/img/slider/6.jpeg" alt="">
+              </div>
+              <div class="item">
+                <img src="/img/slider/7.jpeg" alt="">
+              </div>
+              <div class="item">
+                <img src="/img/slider/8.jpeg" alt="">
+              </div>
+              <div class="item">
+                  <img src="/img/slider/9.jpeg" alt="">
+              </div>
+              <div class="item">
+                  <img src="/img/slider/10.jpeg" alt="">
+              </div>
+              <div class="item">
+                <img src="/img/slider/11.jpeg" alt="">
+              </div>
+              <div class="item">
+                <img src="/img/slider/12.jpeg" alt="">
+              </div>
+              <div class="item">
+                <img src="/img/slider/13.jpeg" alt="">
+              </div>
+              <div class="item">
+                  <img src="/img/slider/14.jpeg" alt="">
+              </div>
+              <div class="item">
+                <img src="/img/slider/15.jpeg" alt="">
+              </div>
+              <div class="item">
+                <img src="/img/slider/16.jpeg" alt="">
+              </div>
+              <div class="item">
+                <img src="/img/slider/17.jpeg" alt="">
+              </div>
+              <div class="item">
+                <img src="/img/slider/18.jpeg" alt="">
+              </div>
+              <div class="item">
+                <img src="/img/slider/19.jpeg" alt="">
+              </div>
+
+          </div>
+          <div class="buttons">
+              <button id="prev"><</button>
+              <button id="next">></button>
+          </div>
+          <ul class="dots">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+
+          </ul>
+      </div>
+
+      <!-- OBŘAD -->
+      <div class="obrad container pt-5 px-0">
+        
+        <span class="d-flex justify-content-center align-items-center text-uppercase fs-4 font-400">
+          <div><img class="logo-small" src="/img/mol.png" alt=""></div> 
+          obřad
+          <div><img class="logo-small mirrored-image" src="/img/mol.png" alt=""></div> 
+        </span>
+
+      
+        <div class="divider div-transparent div-arrow-down"></div>
+        <div class="row ">
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-top ">
+            <div class="container py-sm-2">
+              <div class=" d-flex justify-content-center pb-3 ">
+                <img class="icon img-fluid " src="/img/flowers/sunflower.png" alt="">
+              </div>
+              <span class="d-flex justify-content-center lh-lg text-center text-obsah-400">01.08.2025</span>
+              <span class="d-flex justify-content-center lh-lg text-center text-obsah-400">začátek obřadu: 14:00</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center ">
+            <div class="container py-sm-2">
+              <div class=" d-flex justify-content-center pb-3 ">
+                <img class="icon img-fluid " src="/img/flowers/2-blue.png" alt="">
+              </div>
+            <span class="d-flex justify-content-center lh-lg text-center text-obsah-400">Stodola Dyrkowo</span>
+            <span class="d-flex justify-content-center lh-lg text-center text-obsah-400">Szyszłowskie Holendry 7</span>
+            <span class="d-flex justify-content-center lh-lg text-center text-obsah-400"> 62-402 Ostrowite</span>
+            <span class="d-flex justify-content-center lh-lg text-center text-obsah-400">Polsko</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROGRAM -->
+      <div class="container pt-5 px-0">
+
+        <span class="d-flex justify-content-center align-items-center text-uppercase fs-4 font-400">
+          <div><img class="logo-small-2" src="/img/mol.png" alt=""></div> 
+          program
+          <div><img class="logo-small mirrored-image" src="/img/mol.png" alt=""></div> 
+        </span>
+        
+        <div class="divider div-transparent div-arrow-down"></div>
+
+        <div class="row d-flex align-items-center p-md-3">
+
+          <div class="col-md-6 col-sm-12 gap-4 d-flex justify-content-center align-items-center px-0">
+            
+              <img class="icon img-fluid " src="/img/flowers/11.png" alt="">
+              <span class="text-obsah-500 lh-lg">Příjezd na místo  13:30  <br> Stodola Dyrkowo</span>
+              
+            
+          </div>
+          <div class="col-md-6 col-sm-12 gap-4 d-flex justify-content-center align-items-center px-0">
+            
+              <img class="icon img-fluid " src="/img/flowers/9.png" alt="">
+              <span class="text-obsah-500 lh-lg">Svatební hostina 16:00</span>
+            
+          </div>
+          <div class="col-md-6 col-sm-12 gap-4 d-flex justify-content-center align-items-center px-0">
+            
+              <img class="icon img-fluid " src="/img/flowers/9.png" alt="">
+              <span class="text-obsah-500 lh-lg">
+                Zahájení obřadu 14:00 
+              </span>
+            
+          </div>
+          <div class="col-md-6 col-sm-12 gap-4 d-flex justify-content-center align-items-center px-0">
+            
+              <img class="icon img-fluid " src="/img/flowers/11.png" alt="">
+              <span class="text-obsah-500 lh-lg">Dál volný program</span>
+            
+          </div>
+          <!-- <div class="col-md-6 col-sm-12 gap-4 d-flex justify-content-center align-items-center px-0">
+            
+              <img class="icon img-fluid " src="/img/flowers/11.png" alt="">
+              <span class="text-obsah-400 lh-lg">12.00 sraz na drobné občerstvení <br> v Restauraci Sousedský club</span>
+            
+          </div>
+          <div class="col-md-6 col-sm-12 gap-4 d-flex justify-content-center align-items-center px-0">
+            
+              <img class="icon img-fluid " src="/img/flowers/9.png" alt="">
+              <span class="text-obsah-400 lh-lg">12.00 sraz na drobné občerstvení <br> v Restauraci Sousedský club</span>
+            
+          </div> -->
+
+        </div>
+
+      </div>
+
+      <!-- TRIANGLES -->
+      <div class="container pt-5 px-0">
+
+        <div class="flex-row">
+          
+          <div class="col-auto d-flex justify-content-center align-items-center">
+
+            <span class="d-flex justify-content-center align-items-center text-uppercase fs-4 font-400">
+              <div><img class="logo-small-3" src="/img/mol.png" alt=""></div> 
+              dresss code
+              <div><img class="logo-small mirrored-image" src="/img/mol.png" alt=""></div> 
+            </span>
+
+          </div>
+
+          <div class="divider div-transparent div-arrow-down"></div>
+
+          <div class="col-auto d-flex justify-content-center align-items-center py-4">
+            <span class=" text-center text-obsah-400 lh-lg">Co na sebe a v jakém stylu bude svatba?
+              <br>
+              Oblečte se tak aby vám bylo pohodlně a mohli jste protancovat celou noc.
+              <br>
+              Naše svatba bude pestrobarevná. Bylo by úžasné, kdyby jste se oblékli do veselých a hravích barev.
+              <br>
+              Trouhelníky jsou doporučenými barvami.
+              </span>
+          </div>
+
+          <div class="triangles-dress-code d-flex justify-content-center align-items-center py-4">
+            <div class="triangle dress-code-1  col-sm-12"></div>
+            <div class="triangle dress-code-2  col-sm-12"></div>
+            <div class="triangle dress-code-3  col-sm-12"></div>
+            <div class="triangle dress-code-4  col-sm-12"></div>
+            <div class="triangle dress-code-5  col-sm-12"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIP NA DÁREK -->
+      <div class="container pt-5 px-0">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="">
+            <span class="d-flex justify-content-center align-items-center text-uppercase fs-4 font-400">
+              <div>
+              <img class="logo-small-4" src="/img/mol.png" alt="">
+              </div>
+              tip na dárek
+              <div><img class="logo-small mirrored-image" src="/img/mol.png" alt=""></div> </span>
+          </div>
+          <div class="divider div-transparent div-arrow-down"></div>
+          <div class="custom-width-tip-darek">
+            <span class="text-obsah-400 lh-lg">
+              Rozhodli jsme se, že bychom se rádi vydali na výpravu do severských zemí. 
+              Pokud by jste nám chtěli pomoci s realizací, a přispět nám, klidně anonymně na účet ……budeme velmi rádi, a slibujeme zábavné fotky z této cesty.
+              Tyto fotky, i fotky ze svatby naleznete na google disku: ……
+              Sem můžete také vkládat svoje fotky, které na svatbě uděláte. 🙂
+              
+              Pokud jste spíš zastánci staré dobré obálky, i ty s potěšením přijmeme 1.8.2025 po obřadu
+              
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DŮLEŽITÉ OSOBY -->
+      <div class="form-div container pt-5 px-0">
+
+        <span class="d-flex justify-content-center align-items-center text-uppercase fs-4 font-400">
+          <div><img class="logo-small-5" src="/img/mol.png" alt=""></div> 
+          důležté osoby
+          <div><img class="logo-small mirrored-image" src="/img/mol.png" alt=""></div> 
+        </span>
+        <div class="divider div-transparent div-arrow-down"></div>
+
+        <div class="row d-flex justify-content-center align-items-center gap-5">
+
+          <div class="osoba w-auto">
+
+            <div class="marcel-img">
+              <img class="img-marcel" src="/img/marcel.jpg" alt="">
+            </div>
+              <p class="text-center text-obsah-700">Marcelinka Citrón</p>
+              <br>
+              <p class="text-center text-obsah-500">Svědkováědková nevěsty</p>
+              <br>
+              <p class="text-break-200 text-center text-obsah-400 lh-lg">
+                Komunikace po polsku
+                <br>
+                marcelinkacytryna@gmil.com
+              </p>
+          
+          </div>
+          <div class="osoba w-auto">
+
+            <div class="marcel-img">
+              <img class="img-marcel" src="/img/šarlota.png" alt="">
+            </div>
+              <p class="text-center text-obsah-700">Šarlota Emma Horáčková</p>
+              <br>
+              <p class="text-center text-obsah-500">Družička nevěsty</p>
+              <br>
+              <p class="text-break-200 text-center text-obsah-400 lh-lg">
+                Komunikace česky
+                <br>
+                sarlota.ho@gmail.com
+
+              </p>
+          
+          </div>
+          <!-- <div class="osoba w-auto">
+
+            <div class="marcel-img">
+              <img class="img-marcel" src="/img/marcel.jpg" alt="">
+            </div>
+              <p class="text-center text-obsah-700">Marcelinka Citrón</p>
+              <br>
+              <p class="text-center text-obsah-500">Svědkyně nevěsty</p>
+              <br>
+              <p class="text-break-200 text-center text-obsah-400 lh-lg">Tato milá žena je nejbližší kamarádka nevěsty a bude jí svědkyní.</p>
+          
+          </div> -->
+        </div>
+      </div>
+      <!-- DYRKOWO -->
+      <div class="container pt-5 px-0">
+        <span class="d-flex justify-content-center align-items-center text-uppercase fs-4 font-400 logo-small-dyrkwo ">
+          <div>
+            <img class="logo-small-6" src="/img/mol.png" alt=""></div> 
+          <span class="mobile-text">stodola dyrkowo</span>
+          <div><img class="logo-small mirrored-image" src="/img/mol.png" alt=""></div> 
+        </span>
+
+        <div class="divider div-transparent div-arrow-down"></div>
+
+        <div class="dyrkowo-img container d-flex justify-content-center align-items-center g-0">
+        <a href="https://dyrkowo.pl/en/">
+          <img src="/img/dyrkowo2.jpg" class="stodola-img img-fluid w-100 object-fit-cover" alt="Dyrkowo Photo">
+        </a>
+        </div>
+
+      </div>
+
+      <!-- FORM -->
+    <form id="myForm">
+      <div class="container pt-5 py-sm-1 w-75 w-small-50 ">
+        <span class="d-flex justify-content-center align-items-center text-uppercase fs-4 font-400">
+          <div><img class="logo-small-7" src="/img/mol.png" alt=""></div> 
+          Formulář
+          <div><img class="logo-small mirrored-image" src="/img/mol.png" alt=""></div> 
+        </span>
+        <div class="divider div-transparent div-arrow-down"></div>
+        
+      <div class="border border-2 p-2 mb-2">
+            <!-- Jmeno a prijmeni -->
+            <div class="row d-flex align-items-center pb-2">
+
+              <p class="col-12 pb-1 mb-0 text-obsah-400">Vaše jméno a příjmení <span class="text-danger">*</span></p>
+        
+              <div class="col-6 ">
+                <input type="text" name="name" class="form-control w-100" placeholder="Jméno">
+              </div>
+        
+              <div class="col-6 ">
+                <input type="text" name="surname" class="form-control w-100" placeholder="Příjmení">
+              </div>
+        
+            </div>
+
+        <!-- Email -->
+
+        <div class="row d-flex align-items-center pb-2">
+
+          <p class="col-12 pb-1 mb-0 text-obsah-400">Email <span class="text-danger">*</span></p>
+
+          <div class="col-12">
+            <input type="text" name="email" class="form-control w-100" placeholder="Váš email">
+          </div>
+
+        </div>
+
+        <!-- Docházka -->
+
+        <div class="row d-flex align-items-center pb-2">
+
+          <p class="col-12 pb-1 mb-0 text-obsah-400">Příjdete na naší svatbu?</p>
+
+          <div class="col-12">
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="ano" value="Ano">
+              <label class="form-check-label text-obsah-400" for="ano">
+                Ano
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="ne" value="Bohužel, nedorazíme">
+              <label class="form-check-label text-obsah-400" for="ne">
+                Bohužel, nedorazíme
+              </label>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <!-- Kolik vas bude -->
+
+        <div class="row d-flex align-items-center pb-2">
+
+          <p class="col-12 pb-1 mb-0 text-obsah-400">Kolik vás bude? </p>
+
+          <div class="selection-div">
+            <select class="form-select w-auto" id="attendanceCount" name="guests">
+              <option value="1">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">6</option>
+              <option value="5">7</option>
+              <option value="5">8</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Kolik bude deti -->
+
+        <div class="row d-flex align-items-center pb-2">
+
+          <p class="col-12 pb-1 mb-0 text-obsah-400">Kolik z toho bude dětí? </p>
+
+          <div class="selection-div">
+            <select class="form-select w-auto" id="attendanceCount" name="children">
+              <option value="1">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">6</option>
+              <option value="5">7</option>
+              <option value="5">8</option>
+            </select>
+          </div>
+
+        </div>
+        
+
+        <!-- Vegetarian -->
+
+        <div class="row d-flex align-items-center pb-2">
+
+          <p class="col-12 pb-1 mb-0 text-obsah-400">Kolik vás je vegeteriánů? </p>
+
+          <div class="selection-div">
+            <select class="form-select w-auto" id="attendanceCount" name="vegetarians">
+              <option value="1">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">6</option>
+              <option value="5">7</option>
+              <option value="5">8</option>
+            </select>
+          </div>
+        </div>
+
+        
+
+        <!-- Ubytovani -->
+
+        <div class="row d-flex align-items-center pb-2">
+
+          <p class="width-auto pb-1 mb-0 text-obsah-400 ">Děti ve věku?</p>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="0-4" id="flexCheckDefault" name="accommodation[]">
+              <label class="form-check-label text-obsah-400" for="flexCheckDefault">0-4</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="4-12" id="flexCheckChecked" name="accommodation[]">
+              <label class="form-check-label text-obsah-400" for="flexCheckChecked">4-12</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="starší" id="flexCheckChecked" name="accommodation[]">
+              <label class="form-check-label text-obsah-400" for="flexCheckChecked">starší</label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+        <!-- Odeslat -->
+
+        <div class="row d-flex justify-content-center align-items-center pb-2">
+
+          <button type="button" id="submitButton" class="btn btn-outline-dark w-auto font-700">Odeslat</button>
+
+        </div>
+
+      </div>
+    </form>
+
+      <!-- MÍSTO KONÁNÍ -->
+      <div class="container z-10 py-5 px-0">
+        <span class="d-flex justify-content-center align-items-center text-uppercase fs-4 font-400">
+          <div><img class="logo-small-8" src="/img/mol.png" alt=""></div> 
+          místo konání
+          <div><img class="logo-small mirrored-image" src="/img/mol.png" alt=""></div> 
+        </span>
+      <div class="divider div-transparent div-arrow-down"></div>
+
+      <div class="dyrkowo-img container-fluid d-flex justify-content-center align-items-center g-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d373701.11545832217!2d18.03424!3d52.348999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704c93f8310145f%3A0x1d99046af4a6220a!2sDyrkowo!5e1!3m2!1sen!2sus!4v1725743104448!5m2!1sen!2sus" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </div>
+
+  </div>
+
+
+
+
+
+<!-- RIGHT -->
+
+
+<div class="parallax-container">
+
+
+  <!-- -1 -2 -3 kytky parallax -->
+
+
+  <div class="flower-wrapper left-8">
+    <img class="flower-4" src="/img/flowers/3-blue.png" alt="">
+  </div> 
+
+  <div class="flower-wrapper left-9">
+    <img class="flower-4" src="/img/flowers/3-blue.png" alt="">
+  </div> 
+
+  
+ <!-- 1.. 2.. 3.. kytky parallax -->
+  <div class="flower-wrapper left-1">
+    <img class="flower-4" src="/img/flowers/1-blue.png" alt="">
+  </div>
+
+  <div class="flower-wrapper left-2">
+    <img class="flower-4" src="/img/flowers/3-blue.png" alt="">
+  </div> 
+
+  <div class="flower-wrapper left-3">
+    <img class="flower-4" src="/img/flowers/2-blue.png" alt="">
+  </div>
+
+  <div class="flower-wrapper left-4">
+    <img class="flower-4" src="/img/flowers/3-blue.png" alt="">
+  </div> 
+
+  <div class="flower-wrapper left-5">
+    <img class="flower-4" src="/img/flowers/3-blue.png" alt="">
+  </div> 
+
+  <div class="flower-wrapper left-6">
+    <img class="flower-4" src="/img/flowers/3-blue.png" alt="">
+  </div> 
+
+  <!-- <div class="flower-wrapper left-7"></div>
+    <img class="flower-4" src="/img/flowers/2-blue.png" alt="">
+  </div> -->
+
+
+
+
+
+  <!-- LEFT -->
+  <div class="flower-wrapper right-1">
+    <img class="flower-3" src="/img/flowers/1-red.png" alt="">
+  </div>
+
+  <div class="flower-wrapper right-2">
+    <img class="flower-3" src="/img/flowers/1-shroom.png" alt="">
+  </div>
+
+  <div class="flower-wrapper right-3">
+    <img class="flower-3" src="/img/flowers/3-red.png" alt="">
+  </div>
+
+  <div class="flower-wrapper right-4">
+    <img class="flower-3" src="/img/flowers/3-red.png" alt="">
+  </div>
+
+  <div class="flower-wrapper right-5">
+    <img class="flower-3" src="/img/flowers/3-red.png" alt="">
+  </div>
+
+  <div class="flower-wrapper right-6">
+    <img class="flower-3" src="/img/flowers/3-red.png" alt="">
+  </div>
+
+  <div class="flower-wrapper right-7">
+    <img class="flower-3" src="/img/flowers/3-red.png" alt="">
+  </div>
+
+  <div class="flower-wrapper right-8">
+    <img class="flower-3" src="/img/flowers/3-red.png" alt="">
+  </div>
+
+  <div class="flower-wrapper right-9">
+    <img class="flower-3" src="/img/flowers/3-red.png" alt="">
+  </div>
+</div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
