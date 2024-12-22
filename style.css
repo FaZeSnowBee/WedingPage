@@ -324,6 +324,11 @@
     border-right: 1px solid rgb(48,49,51);
   }
 
+  .google_disk{
+    list-style: none;
+    color: #870B0B;
+  }
+
   /* PARALLAX */
 
   .parallax-container {
@@ -727,7 +732,7 @@
     margin-bottom: 5px;
   }
 
-  /* SIDEBAR */
+  /* CZ_PL_SIDEBAR */
 
   .poland_img{
     height: 25px;
@@ -789,7 +794,7 @@
 
   @media (min-width: 992px) {
     .sidebar {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       min-width: 100vw;
