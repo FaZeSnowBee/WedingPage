@@ -325,40 +325,6 @@ window.onresize = function(event) {
     reloadSlider();
 };
 
-// FORM
-document.getElementById('submitButton').addEventListener('click', function() {
-  sendEmail();
-});
-
-function sendEmail() {
-  const form = document.getElementById('myForm');
-  const formData = new FormData(form);
-
-  Email.send({
-    Host : "smtp.gmail.com",
-    Username : "maryaondra1.8.25@gmail.com",
-    Password : "Kordy1825", 
-    To : 'maryaondra1.8.25@gmail.com',
-    From : formData.get("email"),
-    Subject : "Wedding Form",
-    Body : `
-      Name: ${formData.get("name")} ${formData.get("surname")}
-      Email: ${formData.get("email")}
-      Attending: ${formData.get("flexRadioDefault")}
-      Number of guests: ${formData.get("guests")}
-      Children: ${formData.get("children")}
-      Vegetarians: ${formData.get("vegetarians")}
-      Accommodation: ${Array.from(formData.getAll("accommodation")).join(", ")}
-    `,
-  })
-  .then(
-    message => alert("Formulář uspěšně odeslán!")
-  )
-  .catch(err => {
-    console.error('Error:', err);
-    alert('Nastala chyba při odesílání formuláře. Zkuste to znovu.');
-  });
-}
 
 // SIDEBAR-LANGUAGE
 

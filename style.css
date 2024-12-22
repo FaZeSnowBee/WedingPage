@@ -62,9 +62,6 @@
     text-align: center;
   }
   
-  .stodola-img{
-  }
-  
 
   .mirrored-image {
     transform: scaleX(-1);
@@ -781,8 +778,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
     background-color: var(--foreground);
     color: var(--background);
     transform: translateY(-100%); /* Starts offscreen */

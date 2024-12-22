@@ -18,12 +18,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
   <script src="main.js" defer></script>
+  
   
 </head>
 
@@ -406,171 +407,133 @@ wskazówka na prezent
       </div>
 
       <!-- FORM -->
-    <form id="myForm">
-      <div class="container pt-5 py-sm-1 w-75 w-small-50 " id="form">
-        <span class="d-flex justify-content-center align-items-center text-uppercase fs-4 font-400">
-          <div><img class="logo-small-7" src="img/mol.png" alt=""></div> 
-          Formularz
-          <div><img class="logo-small mirrored-image" src="img/mol.png" alt=""></div> 
-        </span>
-        <div class="divider div-transparent div-arrow-down"></div>
-        
-      <div class="border border-2 p-2 mb-2">
-            <!-- Jmeno a prijmeni -->
-            <div class="row d-flex align-items-center pb-2">
-
-              <p class="col-12 pb-1 mb-0 text-obsah-400">Twoje imię i nazwisko<span class="text-danger">*</span></p>
-        
-              <div class="col-6 ">
-                <input type="text" name="name" class="form-control w-100" placeholder="Nazwa">
+           <!-- FORM -->
+           <form id="weddingForm" action="https://formspree.io/f/xwppegge" method="POST">
+            <div class="container pt-5 py-sm-1 w-75 w-small-50">
+              <span class="d-flex justify-content-center align-items-center text-uppercase fs-4 font-400">
+                <div><img class="logo-small-7" src="img/mol.png" alt=""></div> 
+                Formulář
+          
+                <div><img class="logo-small mirrored-image" src="img/mol.png" alt=""></div> 
+              </span>
+              <div class="divider div-transparent div-arrow-down"></div>
+              
+              <div class="border border-2 p-2 mb-2">
+                
+                <!-- Jmeno a prijmeni -->
+                <div class="row d-flex align-items-center pb-2">
+                  <p class="col-12 pb-1 mb-0 text-obsah-400">Vaše jméno a příjmení <span class="text-danger">*</span></p>
+                  <div class="col-6">
+                    <input type="text" name="name" class="form-control w-100" placeholder="Jméno" required>
+                  </div>
+                  <div class="col-6">
+                    <input type="text" name="surname" class="form-control w-100" placeholder="Příjmení" required>
+                  </div>
+                </div>
+          
+                <!-- Docházka -->
+                <div class="row d-flex align-items-center pb-2">
+                  <p class="col-12 pb-1 mb-0 text-obsah-400">Příjdete na naší svatbu?</p>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="attendance" id="ano" value="Ano" required>
+                      <label class="form-check-label text-obsah-400" for="ano">
+                        Ano
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="attendance" id="ne" value="Bohužel, nedorazíme" required>
+                      <label class="form-check-label text-obsah-400" for="ne">
+                        Bohužel, nedorazíme
+                      </label>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Kolik vas bude -->
+                <div class="row d-flex align-items-center pb-2">
+                  <p class="col-12 pb-1 mb-0 text-obsah-400">Kolik vás bude?</p>
+                  <div class="selection-div">
+                    <select class="form-select w-auto" id="attendanceCount" name="guests" required>
+                      <option value="">-</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8+</option>
+                    </select>
+                  </div>
+                </div>
+          
+                <!-- Kolik bude deti -->
+                <div class="row d-flex align-items-center pb-2">
+                  <p class="col-12 pb-1 mb-0 text-obsah-400">Kolik z toho bude dětí?</p>
+                  <div class="selection-div">
+                    <select class="form-select w-auto" id="children" name="children" required>
+                      <option value="">-</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8+</option>
+                    </select>
+                  </div>
+                </div>
+          
+                <!-- Vegetarian -->
+                <div class="row d-flex align-items-center pb-2">
+                  <p class="col-12 pb-1 mb-0 text-obsah-400">Kolik vás je vegeteriánů?</p>
+                  <div class="selection-div">
+                    <select class="form-select w-auto" id="vegetarians" name="vegetarians" required>
+                      <option value="">-</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8+</option>
+                    </select>
+                  </div>
+                </div>
+          
+                <!-- Ubytovani -->
+                <div class="row d-flex align-items-center pb-2">
+                  <p class="width-auto pb-1 mb-0 text-obsah-400">Děti ve věku?</p>
+                  <div class="col-12">
+                    <select class="form-select w-auto" id="KidsAge" name="KidsAge" required>
+                      <option value="">-</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8+</option>
+                    </select>
+                  </div>
+                </div>
+          
               </div>
-        
-              <div class="col-6 ">
-                <input type="text" name="surname" class="form-control w-100" placeholder="Nazwisko">
+              
+              <!-- Odeslat -->
+              <div class="row d-flex justify-content-center align-items-center pb-2">
+                <button type="submit" id="submitButton" class="btn btn-outline-dark w-auto font-700">Odeslat</button>
               </div>
-        
-            </div>
-
-        <!-- Email -->
-
-        <div class="row d-flex align-items-center pb-2">
-
-          <p class="col-12 pb-1 mb-0 text-obsah-400">Email <span class="text-danger">*</span></p>
-
-          <div class="col-12">
-            <input type="text" name="email" class="form-control w-100" placeholder="Twój e-mail">
-          </div>
-
-        </div>
-
-        <!-- Docházka -->
-
-        <div class="row d-flex align-items-center pb-2">
-
-          <p class="col-12 pb-1 mb-0 text-obsah-400">
-            Przyjdziesz na nasz ślub?</p>
-
-          <div class="col-12">
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="ano" value="Ano">
-              <label class="form-check-label text-obsah-400" for="ano">
-                Tak
-              </label>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="ne" value="Bohužel, nedorazíme">
-              <label class="form-check-label text-obsah-400" for="ne">
-                Niestety nie dotrzemy
-              </label>
+          
             </div>
             
-          </div>
-
-        </div>
-
-        <!-- Kolik vas bude -->
-
-        <div class="row d-flex align-items-center pb-2">
-
-          <p class="col-12 pb-1 mb-0 text-obsah-400">Ilu was będzie? </p>
-
-          <div class="selection-div">
-            <select class="form-select w-auto" id="attendanceCount" name="guests">
-              <option value="1">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">6</option>
-              <option value="5">7</option>
-              <option value="5">8</option>
-            </select>
-          </div>
-
-        </div>
-
-        <!-- Kolik bude deti -->
-
-        <div class="row d-flex align-items-center pb-2">
-
-          <p class="col-12 pb-1 mb-0 text-obsah-400">Ile będzie dzieci? </p>
-
-          <div class="selection-div">
-            <select class="form-select w-auto" id="attendanceCount" name="children">
-              <option value="1">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">6</option>
-              <option value="5">7</option>
-              <option value="5">8</option>
-            </select>
-          </div>
-
-        </div>
-        
-
-        <!-- Vegetarian -->
-
-        <div class="row d-flex align-items-center pb-2">
-
-          <p class="col-12 pb-1 mb-0 text-obsah-400">
-            Ilu z Was jest wegetarianami? </p>
-
-          <div class="selection-div">
-            <select class="form-select w-auto" id="attendanceCount" name="vegetarians">
-              <option value="1">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">6</option>
-              <option value="5">7</option>
-              <option value="5">8</option>
-            </select>
-          </div>
-        </div>
-
-        
-
-        <!-- Ubytovani -->
-
-        <div class="row d-flex align-items-center pb-2">
-
-          <p class="width-auto pb-1 mb-0 text-obsah-400 ">Dzieci w wieku?</p>
-
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="0-4" id="flexCheckDefault" name="accommodation[]">
-              <label class="form-check-label text-obsah-400" for="flexCheckDefault">0-4</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="4-12" id="flexCheckChecked" name="accommodation[]">
-              <label class="form-check-label text-obsah-400" for="flexCheckChecked">4-12</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="starší" id="flexCheckChecked" name="accommodation[]">
-              <label class="form-check-label text-obsah-400" for="flexCheckChecked">
-                starsze</label>
-            </div>
-          </div>
-
-        </div>
-      </div>
-        <!-- Odeslat -->
-
-        <div class="row d-flex justify-content-center align-items-center pb-2">
-
-          <button type="button" id="submitButton" class="btn btn-outline-dark w-auto font-700">
-            Wysłać</button>
-
-        </div>
-
-      </div>
-    </form>
+            <input type="hidden" name="_next" value="https://your-website.com/thank-you">
+            <input type="text" name="_gotcha" style="display:none" />
+          </form>
 
       <!-- MÍSTO KONÁNÍ -->
       <div class="container z-10 py-5 px-0" id="misto">
